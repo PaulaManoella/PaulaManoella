@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Paula Manoella</h1>
-<h3 align="center">a front-end devlop from Brazil</h3>
+<h3 align="center">a front-end develop from Brazil</h3>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
