@@ -73,8 +73,3 @@ Olá! Sou **Paula Manoella**, bacharel em **Sistemas de Informação pela UFPA**
 </div>
 
 <br/>
-
-<!-- Rodapé -->
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:C084FC,50:7C3AED,100:2E1065&height=100&section=footer" width="100%" />
-</div>
