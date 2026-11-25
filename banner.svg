@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 270" width="100%" height="270">
+  <defs>
+    <linearGradient id="wall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#190B2E" />
+      <stop offset="100%" stop-color="#2D1552" />
+    </linearGradient>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0E061F" />
+      <stop offset="60%" stop-color="#28124D" />
+      <stop offset="100%" stop-color="#5B21B6" />
+    </linearGradient>
+    <linearGradient id="deskTop" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4C1D95" />
+      <stop offset="50%" stop-color="#5B21B6" />
+      <stop offset="100%" stop-color="#3B1578" />
+    </linearGradient>
+    <radialGradient id="lampGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FDE68A" stop-opacity="0.55" />
+      <stop offset="55%" stop-color="#C084FC" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="screenGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0" />
+    </radialGradient>
+    <clipPath id="windowClip">
+      <rect x="618" y="26" width="292" height="168" rx="4" />
+    </clipPath>
+  </defs>
+
+  <style>
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.25; }
+      50% { opacity: 1; }
+    }
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    @keyframes steam {
+      0% { transform: translateY(0px); opacity: 0; }
+      30% { opacity: 0.7; }
+      100% { transform: translateY(-20px); opacity: 0; }
+    }
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.75; }
+      50% { opacity: 1; }
+    }
+    @keyframes breathe {
+      0%, 100% { transform: scaleY(1); }
+      50% { transform: scaleY(1.06); }
+    }
+    @keyframes floatZ {
+      0% { transform: translate(0px, 0px); opacity: 0; }
+      25% { opacity: 0.9; }
+      100% { transform: translate(10px, -22px); opacity: 0; }
+    }
+    .star-1 { animation: twinkle 2.4s ease-in-out infinite; }
+    .star-2 { animation: twinkle 3.1s ease-in-out infinite 0.8s; }
+    .star-3 { animation: twinkle 2.7s ease-in-out infinite 1.5s; }
+    .cursor { animation: blink 1s steps(1) infinite; }
+    .steam-1 { animation: steam 2.6s ease-out infinite; }
+    .steam-2 { animation: steam 2.6s ease-out infinite 1.3s; }
+    .glow { animation: pulseGlow 3.5s ease-in-out infinite; }
+    .cat-body { transform-box: fill-box; transform-origin: bottom center; animation: breathe 3.2s ease-in-out infinite; }
+    .z1 { animation: floatZ 3s ease-out infinite; }
+    .z2 { animation: floatZ 3s ease-out infinite 1.5s; }
+  </style>
+
+  
+  <rect width="960" height="270" rx="14" fill="url(#wall)" />
+
+  
+  <rect x="42" y="46" width="310" height="8" rx="3" fill="#4C1D95" />
+  <rect x="58" y="18" width="14" height="28" rx="2" fill="#7C3AED" />
+  <rect x="75" y="23" width="12" height="23" rx="2" fill="#A855F7" />
+  <rect x="90" y="15" width="16" height="31" rx="2" fill="#6D28D9" />
+  <rect x="109" y="25" width="11" height="21" rx="2" fill="#C084FC" />
+  
+  <rect x="296" y="34" width="22" height="12" rx="2" fill="#9333EA" />
+  <circle cx="301" cy="30" r="6" fill="#6D28D9" />
+  <circle cx="312" cy="29" r="7" fill="#7C3AED" />
+  <circle cx="307" cy="24" r="6" fill="#A855F7" />
+
+  
+  <path d="M44,54 Q120,76 196,54 Q272,76 350,54" fill="none" stroke="#6D28D9" stroke-width="1.5" />
+  <circle class="star-1" cx="72" cy="61" r="3.5" fill="#FDE68A" />
+  <circle class="star-2" cx="118" cy="65" r="3.5" fill="#F9A8D4" />
+  <circle class="star-3" cx="164" cy="61" r="3.5" fill="#FDE68A" />
+  <circle class="star-1" cx="228" cy="61" r="3.5" fill="#E9D5FF" />
+  <circle class="star-2" cx="274" cy="65" r="3.5" fill="#FDE68A" />
+  <circle class="star-3" cx="320" cy="61" r="3.5" fill="#F9A8D4" />
+
+  
+  <rect x="610" y="18" width="308" height="184" rx="8" fill="#3B1578" stroke="#6D28D9" stroke-width="2" />
+  <g clip-path="url(#windowClip)">
+    <rect x="618" y="26" width="292" height="168" fill="url(#sky)" />
+    
+    <circle cx="858" cy="62" r="18" fill="#F3E8FF" />
+    <circle cx="850" cy="57" r="16" fill="#180A33" />
+    
+    <circle class="star-1" cx="655" cy="48" r="2" fill="#FFFFFF" />
+    <circle class="star-2" cx="702" cy="68" r="1.5" fill="#E9D5FF" />
+    <circle class="star-3" cx="740" cy="42" r="2.2" fill="#FDE68A" />
+    <circle class="star-2" cx="798" cy="54" r="1.8" fill="#FFFFFF" />
+    <circle class="star-1" cx="820" cy="92" r="1.5" fill="#E9D5FF" />
+    <circle class="star-3" cx="888" cy="96" r="2" fill="#FFFFFF" />
+    
+    <path d="M618,194 L618,145 Q655,115 695,148 Q735,120 778,150 Q830,118 875,146 Q898,132 910,145 L910,194 Z" fill="#1E0D3D" />
+    <path d="M618,194 L618,162 Q670,138 725,165 Q785,140 845,168 Q885,152 910,165 L910,194 Z" fill="#130729" />
+  </g>
+  
+  <rect x="762" y="26" width="6" height="168" fill="#3B1578" />
+  <rect x="602" y="196" width="324" height="10" rx="4" fill="#5B21B6" />
+
+  
+  <line x1="882" y1="18" x2="882" y2="44" stroke="#A855F7" stroke-width="1.5" />
+  <rect x="869" y="44" width="26" height="16" rx="4" fill="#7C3AED" />
+  <path d="M872,56 Q860,72 866,88 M882,58 Q880,78 886,94 M892,56 Q904,70 896,86" fill="none" stroke="#C084FC" stroke-width="3" stroke-linecap="round" />
+
+  
+  <rect x="634" y="176" width="26" height="20" rx="3" fill="#7C3AED" />
+  <ellipse cx="640" cy="168" rx="7" ry="12" transform="rotate(-20 640 168)" fill="#A855F7" />
+  <ellipse cx="654" cy="168" rx="7" ry="12" transform="rotate(20 654 168)" fill="#C084FC" />
+  <ellipse cx="647" cy="164" rx="6" ry="13" fill="#8B5CF6" />
+
+  
+  <rect x="0" y="212" width="960" height="58" rx="0" fill="url(#deskTop)" />
+  <rect x="0" y="212" width="960" height="4" fill="#7C3AED" opacity="0.6" />
+
+  
+  <ellipse cx="255" cy="148" rx="170" ry="90" fill="url(#screenGlow)" />
+  <circle class="glow" cx="448" cy="182" r="78" fill="url(#lampGlow)" />
+
+  
+  <rect x="238" y="196" width="34" height="18" fill="#2E1065" />
+  <rect x="210" y="210" width="90" height="6" rx="3" fill="#3B1578" />
+  <rect x="130" y="84" width="250" height="116" rx="8" fill="#1E0D3D" stroke="#7C3AED" stroke-width="2" />
+  <rect x="138" y="92" width="234" height="100" rx="4" fill="#110722" />
+  
+  <circle cx="148" cy="100" r="3" fill="#F472B6" />
+  <circle cx="158" cy="100" r="3" fill="#C084FC" />
+  <circle cx="168" cy="100" r="3" fill="#34D399" />
+  <text x="180" y="103" fill="#A78BFA" font-family="monospace" font-size="9">paula_manoella.py</text>
+  
+  <rect x="148" y="114" width="44" height="5" rx="2" fill="#C084FC" />
+  <rect x="198" y="114" width="68" height="5" rx="2" fill="#E9D5FF" />
+  <rect x="158" y="126" width="84" height="5" rx="2" fill="#8B5CF6" />
+  <rect x="248" y="126" width="40" height="5" rx="2" fill="#34D399" />
+  <rect x="158" y="138" width="56" height="5" rx="2" fill="#A855F7" />
+  <rect x="220" y="138" width="92" height="5" rx="2" fill="#DDD6FE" />
+  <rect x="158" y="150" width="74" height="5" rx="2" fill="#7C3AED" />
+  <rect x="238" y="150" width="46" height="5" rx="2" fill="#F472B6" />
+  <rect x="148" y="164" width="62" height="5" rx="2" fill="#C084FC" />
+  
+  <rect class="cursor" x="216" y="162" width="6" height="9" rx="1" fill="#34D399" />
+
+  
+  <polygon points="175,224 335,224 345,242 165,242" fill="#2E1065" stroke="#8B5CF6" stroke-width="1.5" />
+  <line x1="178" y1="230" x2="332" y2="230" stroke="#A855F7" stroke-width="2" stroke-dasharray="8 4" />
+  <line x1="174" y1="236" x2="336" y2="236" stroke="#C084FC" stroke-width="2" stroke-dasharray="10 4" />
+
+  
+  <rect x="82" y="198" width="24" height="20" rx="4" fill="#DDD6FE" />
+  <path d="M106,202 Q114,202 114,208 Q114,214 106,214" fill="none" stroke="#DDD6FE" stroke-width="2.5" />
+  <path class="steam-1" d="M89,194 Q86,186 90,180" fill="none" stroke="#E9D5FF" stroke-width="2" stroke-linecap="round" />
+  <path class="steam-2" d="M98,194 Q101,186 97,180" fill="none" stroke="#E9D5FF" stroke-width="2" stroke-linecap="round" />
+
+  
+  <rect x="26" y="192" width="32" height="26" rx="4" fill="#6D28D9" />
+  <ellipse cx="32" cy="180" rx="8" ry="16" transform="rotate(-28 32 180)" fill="#8B5CF6" />
+  <ellipse cx="52" cy="180" rx="8" ry="16" transform="rotate(28 52 180)" fill="#A855F7" />
+  <ellipse cx="42" cy="172" rx="7" ry="18" fill="#C084FC" />
+
+  
+  <path d="M368,236 A18,18 0 0,1 404,236" fill="none" stroke="#C084FC" stroke-width="4" stroke-linecap="round" />
+  <rect x="362" y="232" width="10" height="16" rx="4" fill="#7C3AED" stroke="#E9D5FF" stroke-width="1" />
+  <rect x="400" y="232" width="10" height="16" rx="4" fill="#7C3AED" stroke="#E9D5FF" stroke-width="1" />
+
+  
+  <rect x="436" y="172" width="24" height="34" rx="8" fill="#FEF3C7" stroke="#FDE68A" stroke-width="2" />
+  <rect x="434" y="204" width="28" height="10" rx="3" fill="#4C1D95" />
+
+  
+  <g class="cat-body">
+    
+    <ellipse cx="522" cy="208" rx="32" ry="16" fill="#A78BFA" />
+    
+    <path d="M550,212 Q568,210 564,198" fill="none" stroke="#8B5CF6" stroke-width="6" stroke-linecap="round" />
+    
+    <circle cx="500" cy="202" r="14" fill="#C4B5FD" />
+    
+    <polygon points="489,193 493,182 500,190" fill="#C4B5FD" />
+    <polygon points="502,190 509,182 512,193" fill="#C4B5FD" />
+    
+    <path d="M493,203 Q496,206 499,203" fill="none" stroke="#3B1578" stroke-width="1.8" stroke-linecap="round" />
+    <path d="M503,203 Q506,206 509,203" fill="none" stroke="#3B1578" stroke-width="1.8" stroke-linecap="round" />
+  </g>
+  
+  <text class="z1" x="506" y="182" fill="#E9D5FF" font-family="monospace" font-size="12" font-weight="bold">z</text>
+  <text class="z2" x="516" y="174" fill="#C084FC" font-family="monospace" font-size="14" font-weight="bold">Z</text>
+</svg>
